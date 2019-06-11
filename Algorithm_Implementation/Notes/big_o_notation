@@ -1,0 +1,8 @@
+O(log n), known as log time. EXAMPLE: BINARY SEARCH
+O(n), known as linear time. EXAMPLE: SIMPLE SEARCH
+O(n * log n), EXAMPLE: A FAST-SORTING ALGORITHM (QUICKSORT)
+O(n^2), EXAMPLE: A SLOW-SORINT ALGORITHM (SELECTION SORT)
+O(n!), EXAMPLE: A REALLY SLOW ALGORITHM (TRAVELING SALESMAN)
+
+Algorithm speed isn't measured in seconds, but in growth
+of the number of operations.
