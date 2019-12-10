@@ -4,7 +4,7 @@
 
 using namespace std;
 
-vector<int> adj[5];
+vector<int> adj[6];
 bool visited[5];
 
 void dfs(int node) {
