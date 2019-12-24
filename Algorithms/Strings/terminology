@@ -1,0 +1,46 @@
+Terms for String Algorithms:
+
+1) Substring 
+    Ex. "ABCD" - A, B, C, D, AB, BC, CD...
+    String of length (n) has n(n+1)/2 substrings
+
+2) Subsequence
+    Ex. "ABCD" - A, B, C, D, AB, AC, AD, BC, BD...
+    String of length (n) has 2^n - 1 Subsequences
+
+3) Prefix
+    Substring that starts at the beginning:
+    Ex. "ABCD" - A, AB, ABC, ABCD
+
+4) Suffix
+    Substring that ends at the end:
+    Ex. "ABCD" - D, CD, BCD, ABCD
+
+5) Rotation
+    Moving characters from beginning to end one by one:
+    Ex. "ABCD" - ABCD, BCDA, CDAB, DABC
+
+6) Period
+    A prefix that can reconstruct the full string by repeating,
+    the last repeptition can be partial
+    Ex. "ABCABCA" period = ABC
+    bec: ABC + ABC + A (partial)
+
+7) Border
+    String that is prefix and suffix of string
+    Ex. "ABCABCA' - A, ABA, ABACABA
+
+
+TRIE STRUCTURE:
+- Maintains set of strings starting from root.
+
+                        [ C ]
+                       /     \
+                      /       \
+                    [ A ]    [ E ]
+                    /         /  \
+                   /         /    \
+                 [ D ]     [ F ]  [ G ]
+                
+WORDS = CAD, CEF, CEG
+

@@ -1,14 +1,13 @@
-
 # Recursive Way of Calculating N^a.
 # For ex:
 # 8^10 = [8 * 8 * 8 * 8 * 8 * 8 * 8 * 8 * 8 * 8]
 # Then, split it in half and only do the operations for half
-    # num = [8 * 8 * 8 * 8 * 8] * num
+# num = [8 * 8 * 8 * 8 * 8] * num
 # Continue Recursively...
 
 
 N = 5  # exponent
-a = 5   # number
+a = 5  # number
 
 
 def quick_exponent(n):
@@ -19,7 +18,7 @@ def quick_exponent(n):
 
     else:
 
-        result = quick_exponent(n/2)
+        result = quick_exponent(n / 2)
         if n % 2 == 0:
             return result * result
         else:
@@ -28,3 +27,5 @@ def quick_exponent(n):
 
 answer = quick_exponent(N)
 print answer
+
+

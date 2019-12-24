@@ -33,6 +33,7 @@ int main() {
     cin >> N;
     cout << "Exponent?: ";
     cin >> a;
+    cout << "Answer is: ";
     cout << quick_exponent(N) << endl;
 
 }
