@@ -1,0 +1,45 @@
+BITWISE OPERATIONS:
+
+To get binary of number:
+>>> bin(3)
+0b11
+--> get rid of "ob"
+>>> bin(3)[2:]
+11
+
+1) NOT OPERATOR (~)
+Flips all Os to 1s and all 1s to Os
+Ex. 5 = 101
+   ~5 = 010
+
+2) AND OPERATOR (&)
+Take two numbers with equal bit patterns. If both are 1 then it
+equals 1 otherwise 0.
+Ex. 5 = 101
+    3 = 011
+5 & 3 = 001 = 1
+
+3) OR OPERATOR (|)
+Take two numbers with equal bit patterns. If both are 0 then
+equals 0, otherwise 1.
+Ex. 5 = 101
+    3 = 011
+5 | 3 = 111 = 7
+
+3) XOR OPERATOR (^)
+Take two numbers with equal bit patterns. If both are same
+then equals 0, otherwise 1.
+Ex. 5 = 101
+    3 = 011
+5 ^ 3 = 110 = 6
+
+4) LEFT SHIFT OPERATOR (<<)
+Adds "n" number of 0s to the end.
+Ex. 5 << 2;
+    bin(5) = 101
+    ...add 2 "0"s to the end...
+    5 << 2 = 10100
+    10100 = 20
+
+
+

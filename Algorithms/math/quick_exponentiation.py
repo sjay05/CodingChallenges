@@ -27,5 +27,3 @@ def quick_exponent(n):
 
 answer = quick_exponent(N)
 print answer
-
-

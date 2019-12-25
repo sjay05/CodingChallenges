@@ -1,5 +1,5 @@
 # LeetCode "Single Number" Solution using BIT MANUPILATION.
-array = [1, 2, 2, 1, 3, 4, 4, 3, 5, 6, 5]
+array = [2,2,1]
 
 
 def single_number(numbers):
