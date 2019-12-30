@@ -1,10 +1,10 @@
 max = 3
-
+output = []
 
 def bracket_generator(i, j, s):
     if j == max:
         s += (")" * i)
-        print s
+        output.append(s)
         return
 
     else:
@@ -16,3 +16,4 @@ def bracket_generator(i, j, s):
 
 
 bracket_generator(0, 0, "")
+print output
