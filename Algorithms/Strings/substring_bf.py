@@ -1,4 +1,5 @@
 # Substring Search using Brute Force Approach
+# Language = Python 2.7
 """
 Ex. Query:
 Text: abacbaabcabccabcaabb
