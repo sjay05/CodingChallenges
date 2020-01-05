@@ -1,5 +1,6 @@
 # Substring Search using Brute Force Approach
 # Language = Python 2.7
+# Time Complexity = O(nm)
 """
 Ex. Query:
 Text: abacbaabcabccabcaabb

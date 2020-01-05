@@ -1,6 +1,7 @@
 /*
 Substring Search using Brute Force Approach
 Language = C++11
+Time Complexity = O(nm)
 
 Ex. Query:
 Text: abacbaabcabccabcaabb
