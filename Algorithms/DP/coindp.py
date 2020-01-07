@@ -55,18 +55,20 @@ Find MINIMUM number of coins from (c being coin) --> dp[x] = min(dp[x], dp[x-c]+
 The array should become:
 [0, 1, 1, 1, 1, 2, 2, 2]
 Last INDEX is your answer.
+We also can store the coin being choosed, and backtrack
+to see which coins create a smallest set.
 """
 def solve_TOPDOWN(x):
-    dp = [x+1] * x
+    dp = [x+1] * (x+1)
     dp[0] = 0
     for i in range(1, len(dp)):
         for c in coins:
             if (i - c >= 0):
                 dp[i] = min(dp[i], dp[i-c]+1)
     
-    return dp[-1]
+    dp[-1]
 
 if __name__ == "__main__":
     #print solve_NON_DP(target)
     #print solve_WITH_DP(target)
-    print solve_TOPDOWN(target);
+    print solve_TOPDOWN(target)

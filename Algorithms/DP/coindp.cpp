@@ -3,7 +3,7 @@
 using namespace std;
 
 vector<int> coins = {1, 2, 3, 4};
-int target = 7;
+int target = 9;
 
 // Memoization Variables
 const int MAXN = 100;
@@ -62,8 +62,8 @@ The array should become:
 Last INDEX is your answer.
 */
 int solve_TOPDOWN(int x) {
-    int dp[x]; dp[0] = 0;
-    for (int i = 1; i < x; i++) {
+    int dp[x+1]; dp[0] = 0;
+    for (int i = 1; i < x+1; i++) {
         dp[i] = x+1;
         for (int c : coins) {
             if (i-c >= 0) {
@@ -71,7 +71,7 @@ int solve_TOPDOWN(int x) {
             }
         }
     }
-    return dp[x-1];
+    return dp[x];
 }
 
 int main() {
