@@ -3,10 +3,10 @@
 using namespace std;
 
 vector<int> coins = {1, 2, 3, 4, 5, 6, 7};
-int target = 213;
+int target = 21;
 
 // Memoization Variables
-const int MAXN = 1000;
+const int MAXN = 100;
 int value[MAXN];
 bool ready[MAXN];
 
@@ -31,6 +31,11 @@ int solve_NON_DP(int x) {
     return 0;
 }
 
+/*
+Use memoization to efficiently calculate
+values of a recursive function.
+- Store in int value[] and bool ready[]
+*/
 int solve_WITH_DP(int x) {
     if (x == 0) return 0;
     if (ready[x]) return value[x];
@@ -43,9 +48,10 @@ int solve_WITH_DP(int x) {
         }
     }
     return 0;
-}
+}  
 
 int main() {
     reverse(coins.begin(), coins.end());
-    cout << solve_NON_DP(target) << endl;
+    //cout << solve_NON_DP(target) << endl;
+    cout << solve_WITH_DP(target) << endl;
 }
