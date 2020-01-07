@@ -2,8 +2,8 @@
 
 using namespace std;
 
-vector<int> coins = {1, 2, 3, 4, 5, 6, 7};
-int target = 21;
+vector<int> coins = {1, 2, 3, 4};
+int target = 7;
 
 // Memoization Variables
 const int MAXN = 100;
@@ -50,8 +50,33 @@ int solve_WITH_DP(int x) {
     return 0;
 }  
 
+/*
+Basically work your way from solve(0) to solve(x)
+Ex. coins = [1, 3, 4]; Target = 7
+Make DP array with length of target stored with inf
+except 0.
+[0, inf, inf, inf, inf, inf, inf]
+Find MINIMUM number of coins from (c being coin) --> dp[x] = min(dp[x], dp[x-c]+1) 
+The array should become:
+[0, 1, 1, 1, 1, 2, 2, 2]
+Last INDEX is your answer.
+*/
+int solve_TOPDOWN(int x) {
+    int dp[x]; dp[0] = 0;
+    for (int i = 1; i < x; i++) {
+        dp[i] = x+1;
+        for (int c : coins) {
+            if (i-c >= 0) {
+                dp[i] = min(dp[i], dp[i-c]+1);
+            }
+        }
+    }
+    return dp[x-1];
+}
+
 int main() {
     reverse(coins.begin(), coins.end());
     //cout << solve_NON_DP(target) << endl;
-    cout << solve_WITH_DP(target) << endl;
+    //cout << solve_WITH_DP(target) << endl;
+    cout << solve_TOPDOWN(target) << endl;
 }
