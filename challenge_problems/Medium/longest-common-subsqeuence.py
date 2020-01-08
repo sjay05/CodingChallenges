@@ -23,8 +23,9 @@ def lcs(x, y, i, j, str):
         return v, fs
 
 
-a = 'ABCBDAB'
-b = 'BDCABA'
+random = raw_input()
+a = raw_input().replace(" ", "")
+b = raw_input().replace(" ", "")
 
 storage = []
 
@@ -35,4 +36,4 @@ for i in range(len(a)):
     storage.append(temp_list)
 
 length, sa = lcs(a, b, len(a)-1, len(b)-1, '')
-print length, sa
+print length

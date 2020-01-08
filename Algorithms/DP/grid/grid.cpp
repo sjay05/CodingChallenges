@@ -30,14 +30,11 @@ bool check(int x, int y) {
 int find_path(int x, int y, int count) {
     if (x == dest[0] and y == dest[1]) {
         return count + grid[x][y];
-    }
-    if (check(x, y) == true) {
+    } if (check(x, y) == true) {
         count += grid[x][y];
-    }
-    if (check(x, y) == false) {
+    } if (check(x, y) == false) {
         return 0;
-    } 
-    else {
+    } else {
         return max(find_path(x+1, y, count), find_path(x, y+1, count));
     }
 }
@@ -45,3 +42,4 @@ int find_path(int x, int y, int count) {
 int main() {
    cout << find_path(0, 0, 0) << endl;
 }
+
