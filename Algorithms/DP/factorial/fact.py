@@ -17,4 +17,4 @@ def fact_tabulate(x):
     return dp[x-1]
             
 if __name__ == "__main__":
-    fact_tabulate(5)
+    print fact_tabulate(5)
