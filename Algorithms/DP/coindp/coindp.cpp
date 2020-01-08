@@ -12,7 +12,7 @@ bool ready[MAXN];
 
 /*
 Recursive Greedy Approach: 
-Pick greatest number.
+Pick greatest number.k
 Ex. coins = {1,2,3}, target = x
 
     solve(x) = min(solve(x-1)+1,

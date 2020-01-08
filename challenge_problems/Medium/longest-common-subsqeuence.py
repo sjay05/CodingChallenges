@@ -16,7 +16,6 @@ def lcs(x, y, i, j, str):
         left, ls = lcs(x, y, i-1, j, str)
         right, rs = lcs(x, y, i, j-1, str)
         fs = rs
-        print ls, rs
         if len(ls) > len(rs):
             fs = ls
         v = max(left, right)
