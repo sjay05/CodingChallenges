@@ -1,11 +1,20 @@
 import sys
 
+"""
+Top-Down Approach (Recursive):
+    fact(5) = 5 * fact(4)
+                    = 4 * fact(3)
+                    ...
+"""
 def fact(x):
     if x == 1:
         return 1
     else:
         return x * fact(x-1)
-    
+
+"""
+DP - Tabulation (Bottom-Up)
+"""
 def fact_tabulate(x):
     dp = [0] * x
     for i in range(x):
