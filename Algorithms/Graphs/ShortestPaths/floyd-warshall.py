@@ -41,5 +41,6 @@ def floydWarshall():
 
 setup()
 floydWarshall()
-print distance[2][4] # distance[src][dest]
+for i in distance:
+    print i  
         
