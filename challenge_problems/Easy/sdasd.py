@@ -1,4 +1,4 @@
-flowerbed = [1,0,0,0,1]
+flowerbed = [0, 0, 0, 0, 0]
 n = input()
 
 def cpf():
