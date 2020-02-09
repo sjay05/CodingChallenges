@@ -1,8 +1,9 @@
-# Bfs
+# Bfs - Adjacency List
 import Queue
 q = Queue.Queue()
 graph = {}
 visited = []
+distance = {}
 
 
 def create_edge(a, b):

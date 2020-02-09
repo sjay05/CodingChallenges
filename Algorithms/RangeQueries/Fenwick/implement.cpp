@@ -15,19 +15,31 @@ int arr[n] = {0, 1, 3, 4, 8, 6, 1, 4, 2};
 int tree[n];
 
 void add(int k, int x) {
+    for (;k <= n; k += k&-k) {
+        tree[k] += x;
+    }
+    /*
     while (k <= n) {
         tree[k] += x;
         k += k&-k;
     }
+    */
 }
 
 int sum_f(int k) {
+    int s = 0;
+    for (;k > 0; k -= k&-k) {
+        s += tree[k];
+    }
+    return s;
+    /*
     int s = 0;
     while (k > 0) {
         s += tree[k];
         k -= k&-k;
     }
     return s;
+    */
 }
 
 int sum_q(int a, int b) {
@@ -41,6 +53,8 @@ void cnstrctBIT() {
 }
 
 int main() {
-    cnstrctBIT();
-    cout << sum_q(3, 7) << endl;
+    //cnstrctBIT();
+    //cout << sum_q(3, 7) << endl;
+    int N; cin >> N;
+    cout << "Your Number is : " << N << endl;
 }

@@ -8,7 +8,7 @@ Algorithm:
 
 using namespace std;
 
-#define MAXN 5
+const int MAXN = 5;
 int grid[MAXN][MAXN] = {
     {3, 7, 9, 2, 7},
     {9, 8, 3, 5, 5},
@@ -35,11 +35,14 @@ int find_path(int x, int y, int count) {
     } if (check(x, y) == false) {
         return 0;
     } else {
-        return max(find_path(x+1, y, count), find_path(x, y+1, count));
+        return max(find_path(x+1, y, count), \
+			  find_path(x, y+1, count));
     }
 }
 
 int main() {
-   cout << find_path(0, 0, 0) << endl;
+	cout << "----FORMATTED----\n";
+	cout << find_path(0, 0, 0) << endl;
+	cout << "----FORMATTED----\n";
 }
 

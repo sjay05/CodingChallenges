@@ -2,6 +2,16 @@
 Floyd - Warshall Implementation 
 Time Complexity - O(n^3)
 """
+from sys import stdin
+
+input = stdin.readline
+
+def gen(val, length):
+    return [val] * length
+
+def p2d(matrix):
+    for line in matrix:
+        print line
 
 n = 6
 graph = []
@@ -41,6 +51,5 @@ def floydWarshall():
 
 setup()
 floydWarshall()
-for i in distance:
-    print i  
-        
+
+

@@ -27,9 +27,7 @@ def bellman_ford(src):
 # run a loop each time updating shortest path to each node
     for i in range(9):
         for edge in edges:
-            a = edge[0]
-            b = edge[1]
-            w = edge[2]
+            a, b, w = edge
             # Pick exisiting distance and new distance
             distance[b] = min(distance[b], distance[a]+w)
             if distance[a]+w < distance[b]:

@@ -1,3 +1,24 @@
+from sys import stdin
+input = stdin.readline
+
+adj = {1:[2], 2:[3], 3:[1]}
+visited = []
+
+def cycleD(cs, n):
+    if n in cs:
+        print "Cycle found."
+        return
+    elif n in visited:
+        return
+    elif adj[n]:
+        cs.append(n)
+        visited.append(n)
+        for i in adj[n]:
+            cycleD(cs, i)
+
+cycleD([], 1)
+
+"""
 graph = {1: [2], 2: [3], 3: [1]}
 visited = {}
 
@@ -21,3 +42,4 @@ for i in graph.keys():
 
 for i in graph.keys():
     cycle_detection([], i)
+"""
