@@ -9,7 +9,7 @@ def edge(f, t, w):
     adj[f].append((t, w))
 
 def Dijkstra(node):
-    pq = PriorityQueue()
+    pq = vPriorityQueue()
     dist[node] = 0
     pq.put((0, node))
     while not pq.empty():

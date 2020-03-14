@@ -6,11 +6,7 @@
 # Continue Recursively...
 
 
-N = 5  # exponent
-a = 5  # number
-
-
-def quick_exponent(n):
+def quick_exponent(n, a):
     if n == 1:
         return a
     if n == 0:
@@ -18,12 +14,12 @@ def quick_exponent(n):
 
     else:
 
-        result = quick_exponent(n / 2)
+        result = quick_exponent(n / 2, a)
         if n % 2 == 0:
             return result * result
         else:
             return result * result * a
 
 
-answer = quick_exponent(N)
+answer = quick_exponent(3, 2)
 print answer
