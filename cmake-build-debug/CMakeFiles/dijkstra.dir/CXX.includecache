@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alpha/Desktop/DsAlgoC++/Algorithms/Graphs/shortest_path/dijkstra.cpp
+iostream
+-
+queue
+-
+vector
+-
+

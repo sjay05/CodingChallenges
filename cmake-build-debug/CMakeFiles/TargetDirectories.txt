@@ -1,3 +1,7 @@
-/Users/alpha/dev/DSALGO/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/alpha/dev/DSALGO/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/alpha/dev/DSALGO/cmake-build-debug/CMakeFiles/DSALGO.dir
+/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles/S4.dir
+/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles/test.dir
+/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles/dup_knapsack.dir
+/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles/lis.dir
+/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles/0-1_knapsack.dir

@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alpha/dev/DSALGO
+CMAKE_SOURCE_DIR = /Users/alpha/Desktop/DsAlgoC++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alpha/dev/DSALGO/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/dev/DSALGO/cmake-build-debug/CMakeFiles /Users/alpha/dev/DSALGO/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/dev/DSALGO/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,260 +111,204 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DSALGO
+# Target rules for targets named S4
 
 # Build rule for target.
-DSALGO: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DSALGO
-.PHONY : DSALGO
+S4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 S4
+.PHONY : S4
 
 # fast build rule for target.
-DSALGO/fast:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/build
-.PHONY : DSALGO/fast
+S4/fast:
+	$(MAKE) -f CMakeFiles/S4.dir/build.make CMakeFiles/S4.dir/build
+.PHONY : S4/fast
 
-Algorithms/DP/LIS/LIS.o: Algorithms/DP/LIS/LIS.cpp.o
+#=============================================================================
+# Target rules for targets named test
 
-.PHONY : Algorithms/DP/LIS/LIS.o
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
-# target to build an object file
-Algorithms/DP/LIS/LIS.cpp.o:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/LIS/LIS.cpp.o
-.PHONY : Algorithms/DP/LIS/LIS.cpp.o
+# fast build rule for target.
+test/fast:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
-Algorithms/DP/LIS/LIS.i: Algorithms/DP/LIS/LIS.cpp.i
+#=============================================================================
+# Target rules for targets named dup_knapsack
 
-.PHONY : Algorithms/DP/LIS/LIS.i
+# Build rule for target.
+dup_knapsack: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dup_knapsack
+.PHONY : dup_knapsack
 
-# target to preprocess a source file
-Algorithms/DP/LIS/LIS.cpp.i:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/LIS/LIS.cpp.i
-.PHONY : Algorithms/DP/LIS/LIS.cpp.i
+# fast build rule for target.
+dup_knapsack/fast:
+	$(MAKE) -f CMakeFiles/dup_knapsack.dir/build.make CMakeFiles/dup_knapsack.dir/build
+.PHONY : dup_knapsack/fast
 
-Algorithms/DP/LIS/LIS.s: Algorithms/DP/LIS/LIS.cpp.s
+#=============================================================================
+# Target rules for targets named lis
 
-.PHONY : Algorithms/DP/LIS/LIS.s
+# Build rule for target.
+lis: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lis
+.PHONY : lis
 
-# target to generate assembly for a file
-Algorithms/DP/LIS/LIS.cpp.s:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/LIS/LIS.cpp.s
-.PHONY : Algorithms/DP/LIS/LIS.cpp.s
+# fast build rule for target.
+lis/fast:
+	$(MAKE) -f CMakeFiles/lis.dir/build.make CMakeFiles/lis.dir/build
+.PHONY : lis/fast
 
-Algorithms/DP/coindp/coindp.o: Algorithms/DP/coindp/coindp.cpp.o
+#=============================================================================
+# Target rules for targets named 0-1_knapsack
 
-.PHONY : Algorithms/DP/coindp/coindp.o
+# Build rule for target.
+0-1_knapsack: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 0-1_knapsack
+.PHONY : 0-1_knapsack
 
-# target to build an object file
-Algorithms/DP/coindp/coindp.cpp.o:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/coindp/coindp.cpp.o
-.PHONY : Algorithms/DP/coindp/coindp.cpp.o
+# fast build rule for target.
+0-1_knapsack/fast:
+	$(MAKE) -f CMakeFiles/0-1_knapsack.dir/build.make CMakeFiles/0-1_knapsack.dir/build
+.PHONY : 0-1_knapsack/fast
 
-Algorithms/DP/coindp/coindp.i: Algorithms/DP/coindp/coindp.cpp.i
+Algorithms/DP/0-1_knapsack.o: Algorithms/DP/0-1_knapsack.cpp.o
 
-.PHONY : Algorithms/DP/coindp/coindp.i
-
-# target to preprocess a source file
-Algorithms/DP/coindp/coindp.cpp.i:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/coindp/coindp.cpp.i
-.PHONY : Algorithms/DP/coindp/coindp.cpp.i
-
-Algorithms/DP/coindp/coindp.s: Algorithms/DP/coindp/coindp.cpp.s
-
-.PHONY : Algorithms/DP/coindp/coindp.s
-
-# target to generate assembly for a file
-Algorithms/DP/coindp/coindp.cpp.s:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/coindp/coindp.cpp.s
-.PHONY : Algorithms/DP/coindp/coindp.cpp.s
-
-Algorithms/DP/factorial/fact.o: Algorithms/DP/factorial/fact.cpp.o
-
-.PHONY : Algorithms/DP/factorial/fact.o
+.PHONY : Algorithms/DP/0-1_knapsack.o
 
 # target to build an object file
-Algorithms/DP/factorial/fact.cpp.o:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/factorial/fact.cpp.o
-.PHONY : Algorithms/DP/factorial/fact.cpp.o
+Algorithms/DP/0-1_knapsack.cpp.o:
+	$(MAKE) -f CMakeFiles/0-1_knapsack.dir/build.make CMakeFiles/0-1_knapsack.dir/Algorithms/DP/0-1_knapsack.cpp.o
+.PHONY : Algorithms/DP/0-1_knapsack.cpp.o
 
-Algorithms/DP/factorial/fact.i: Algorithms/DP/factorial/fact.cpp.i
+Algorithms/DP/0-1_knapsack.i: Algorithms/DP/0-1_knapsack.cpp.i
 
-.PHONY : Algorithms/DP/factorial/fact.i
+.PHONY : Algorithms/DP/0-1_knapsack.i
 
 # target to preprocess a source file
-Algorithms/DP/factorial/fact.cpp.i:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/factorial/fact.cpp.i
-.PHONY : Algorithms/DP/factorial/fact.cpp.i
+Algorithms/DP/0-1_knapsack.cpp.i:
+	$(MAKE) -f CMakeFiles/0-1_knapsack.dir/build.make CMakeFiles/0-1_knapsack.dir/Algorithms/DP/0-1_knapsack.cpp.i
+.PHONY : Algorithms/DP/0-1_knapsack.cpp.i
 
-Algorithms/DP/factorial/fact.s: Algorithms/DP/factorial/fact.cpp.s
+Algorithms/DP/0-1_knapsack.s: Algorithms/DP/0-1_knapsack.cpp.s
 
-.PHONY : Algorithms/DP/factorial/fact.s
+.PHONY : Algorithms/DP/0-1_knapsack.s
 
 # target to generate assembly for a file
-Algorithms/DP/factorial/fact.cpp.s:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/factorial/fact.cpp.s
-.PHONY : Algorithms/DP/factorial/fact.cpp.s
+Algorithms/DP/0-1_knapsack.cpp.s:
+	$(MAKE) -f CMakeFiles/0-1_knapsack.dir/build.make CMakeFiles/0-1_knapsack.dir/Algorithms/DP/0-1_knapsack.cpp.s
+.PHONY : Algorithms/DP/0-1_knapsack.cpp.s
 
-Algorithms/DP/grid/grid.o: Algorithms/DP/grid/grid.cpp.o
+Algorithms/DP/S4.o: Algorithms/DP/S4.cpp.o
 
-.PHONY : Algorithms/DP/grid/grid.o
+.PHONY : Algorithms/DP/S4.o
 
 # target to build an object file
-Algorithms/DP/grid/grid.cpp.o:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/grid/grid.cpp.o
-.PHONY : Algorithms/DP/grid/grid.cpp.o
+Algorithms/DP/S4.cpp.o:
+	$(MAKE) -f CMakeFiles/S4.dir/build.make CMakeFiles/S4.dir/Algorithms/DP/S4.cpp.o
+.PHONY : Algorithms/DP/S4.cpp.o
 
-Algorithms/DP/grid/grid.i: Algorithms/DP/grid/grid.cpp.i
+Algorithms/DP/S4.i: Algorithms/DP/S4.cpp.i
 
-.PHONY : Algorithms/DP/grid/grid.i
+.PHONY : Algorithms/DP/S4.i
 
 # target to preprocess a source file
-Algorithms/DP/grid/grid.cpp.i:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/grid/grid.cpp.i
-.PHONY : Algorithms/DP/grid/grid.cpp.i
+Algorithms/DP/S4.cpp.i:
+	$(MAKE) -f CMakeFiles/S4.dir/build.make CMakeFiles/S4.dir/Algorithms/DP/S4.cpp.i
+.PHONY : Algorithms/DP/S4.cpp.i
 
-Algorithms/DP/grid/grid.s: Algorithms/DP/grid/grid.cpp.s
+Algorithms/DP/S4.s: Algorithms/DP/S4.cpp.s
 
-.PHONY : Algorithms/DP/grid/grid.s
+.PHONY : Algorithms/DP/S4.s
 
 # target to generate assembly for a file
-Algorithms/DP/grid/grid.cpp.s:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/DP/grid/grid.cpp.s
-.PHONY : Algorithms/DP/grid/grid.cpp.s
+Algorithms/DP/S4.cpp.s:
+	$(MAKE) -f CMakeFiles/S4.dir/build.make CMakeFiles/S4.dir/Algorithms/DP/S4.cpp.s
+.PHONY : Algorithms/DP/S4.cpp.s
 
-Algorithms/Math/quick_exponentiation.o: Algorithms/Math/quick_exponentiation.cpp.o
+Algorithms/DP/dup_knapsack.o: Algorithms/DP/dup_knapsack.cpp.o
 
-.PHONY : Algorithms/Math/quick_exponentiation.o
+.PHONY : Algorithms/DP/dup_knapsack.o
 
 # target to build an object file
-Algorithms/Math/quick_exponentiation.cpp.o:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/Math/quick_exponentiation.cpp.o
-.PHONY : Algorithms/Math/quick_exponentiation.cpp.o
+Algorithms/DP/dup_knapsack.cpp.o:
+	$(MAKE) -f CMakeFiles/dup_knapsack.dir/build.make CMakeFiles/dup_knapsack.dir/Algorithms/DP/dup_knapsack.cpp.o
+.PHONY : Algorithms/DP/dup_knapsack.cpp.o
 
-Algorithms/Math/quick_exponentiation.i: Algorithms/Math/quick_exponentiation.cpp.i
+Algorithms/DP/dup_knapsack.i: Algorithms/DP/dup_knapsack.cpp.i
 
-.PHONY : Algorithms/Math/quick_exponentiation.i
+.PHONY : Algorithms/DP/dup_knapsack.i
 
 # target to preprocess a source file
-Algorithms/Math/quick_exponentiation.cpp.i:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/Math/quick_exponentiation.cpp.i
-.PHONY : Algorithms/Math/quick_exponentiation.cpp.i
+Algorithms/DP/dup_knapsack.cpp.i:
+	$(MAKE) -f CMakeFiles/dup_knapsack.dir/build.make CMakeFiles/dup_knapsack.dir/Algorithms/DP/dup_knapsack.cpp.i
+.PHONY : Algorithms/DP/dup_knapsack.cpp.i
 
-Algorithms/Math/quick_exponentiation.s: Algorithms/Math/quick_exponentiation.cpp.s
+Algorithms/DP/dup_knapsack.s: Algorithms/DP/dup_knapsack.cpp.s
 
-.PHONY : Algorithms/Math/quick_exponentiation.s
+.PHONY : Algorithms/DP/dup_knapsack.s
 
 # target to generate assembly for a file
-Algorithms/Math/quick_exponentiation.cpp.s:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/Math/quick_exponentiation.cpp.s
-.PHONY : Algorithms/Math/quick_exponentiation.cpp.s
+Algorithms/DP/dup_knapsack.cpp.s:
+	$(MAKE) -f CMakeFiles/dup_knapsack.dir/build.make CMakeFiles/dup_knapsack.dir/Algorithms/DP/dup_knapsack.cpp.s
+.PHONY : Algorithms/DP/dup_knapsack.cpp.s
 
-Algorithms/RangeQueries/Fenwick/implement.o: Algorithms/RangeQueries/Fenwick/implement.cpp.o
+Algorithms/DP/lis.o: Algorithms/DP/lis.cpp.o
 
-.PHONY : Algorithms/RangeQueries/Fenwick/implement.o
+.PHONY : Algorithms/DP/lis.o
 
 # target to build an object file
-Algorithms/RangeQueries/Fenwick/implement.cpp.o:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/RangeQueries/Fenwick/implement.cpp.o
-.PHONY : Algorithms/RangeQueries/Fenwick/implement.cpp.o
+Algorithms/DP/lis.cpp.o:
+	$(MAKE) -f CMakeFiles/lis.dir/build.make CMakeFiles/lis.dir/Algorithms/DP/lis.cpp.o
+.PHONY : Algorithms/DP/lis.cpp.o
 
-Algorithms/RangeQueries/Fenwick/implement.i: Algorithms/RangeQueries/Fenwick/implement.cpp.i
+Algorithms/DP/lis.i: Algorithms/DP/lis.cpp.i
 
-.PHONY : Algorithms/RangeQueries/Fenwick/implement.i
+.PHONY : Algorithms/DP/lis.i
 
 # target to preprocess a source file
-Algorithms/RangeQueries/Fenwick/implement.cpp.i:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/RangeQueries/Fenwick/implement.cpp.i
-.PHONY : Algorithms/RangeQueries/Fenwick/implement.cpp.i
+Algorithms/DP/lis.cpp.i:
+	$(MAKE) -f CMakeFiles/lis.dir/build.make CMakeFiles/lis.dir/Algorithms/DP/lis.cpp.i
+.PHONY : Algorithms/DP/lis.cpp.i
 
-Algorithms/RangeQueries/Fenwick/implement.s: Algorithms/RangeQueries/Fenwick/implement.cpp.s
+Algorithms/DP/lis.s: Algorithms/DP/lis.cpp.s
 
-.PHONY : Algorithms/RangeQueries/Fenwick/implement.s
+.PHONY : Algorithms/DP/lis.s
 
 # target to generate assembly for a file
-Algorithms/RangeQueries/Fenwick/implement.cpp.s:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/RangeQueries/Fenwick/implement.cpp.s
-.PHONY : Algorithms/RangeQueries/Fenwick/implement.cpp.s
+Algorithms/DP/lis.cpp.s:
+	$(MAKE) -f CMakeFiles/lis.dir/build.make CMakeFiles/lis.dir/Algorithms/DP/lis.cpp.s
+.PHONY : Algorithms/DP/lis.cpp.s
 
-Algorithms/Strings/substring_bf.o: Algorithms/Strings/substring_bf.cpp.o
+Algorithms/DP/test.o: Algorithms/DP/test.cpp.o
 
-.PHONY : Algorithms/Strings/substring_bf.o
+.PHONY : Algorithms/DP/test.o
 
 # target to build an object file
-Algorithms/Strings/substring_bf.cpp.o:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/Strings/substring_bf.cpp.o
-.PHONY : Algorithms/Strings/substring_bf.cpp.o
+Algorithms/DP/test.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Algorithms/DP/test.cpp.o
+.PHONY : Algorithms/DP/test.cpp.o
 
-Algorithms/Strings/substring_bf.i: Algorithms/Strings/substring_bf.cpp.i
+Algorithms/DP/test.i: Algorithms/DP/test.cpp.i
 
-.PHONY : Algorithms/Strings/substring_bf.i
-
-# target to preprocess a source file
-Algorithms/Strings/substring_bf.cpp.i:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/Strings/substring_bf.cpp.i
-.PHONY : Algorithms/Strings/substring_bf.cpp.i
-
-Algorithms/Strings/substring_bf.s: Algorithms/Strings/substring_bf.cpp.s
-
-.PHONY : Algorithms/Strings/substring_bf.s
-
-# target to generate assembly for a file
-Algorithms/Strings/substring_bf.cpp.s:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/Algorithms/Strings/substring_bf.cpp.s
-.PHONY : Algorithms/Strings/substring_bf.cpp.s
-
-challenge_problems/Easy/recipie.o: challenge_problems/Easy/recipie.cpp.o
-
-.PHONY : challenge_problems/Easy/recipie.o
-
-# target to build an object file
-challenge_problems/Easy/recipie.cpp.o:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/challenge_problems/Easy/recipie.cpp.o
-.PHONY : challenge_problems/Easy/recipie.cpp.o
-
-challenge_problems/Easy/recipie.i: challenge_problems/Easy/recipie.cpp.i
-
-.PHONY : challenge_problems/Easy/recipie.i
+.PHONY : Algorithms/DP/test.i
 
 # target to preprocess a source file
-challenge_problems/Easy/recipie.cpp.i:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/challenge_problems/Easy/recipie.cpp.i
-.PHONY : challenge_problems/Easy/recipie.cpp.i
+Algorithms/DP/test.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Algorithms/DP/test.cpp.i
+.PHONY : Algorithms/DP/test.cpp.i
 
-challenge_problems/Easy/recipie.s: challenge_problems/Easy/recipie.cpp.s
+Algorithms/DP/test.s: Algorithms/DP/test.cpp.s
 
-.PHONY : challenge_problems/Easy/recipie.s
-
-# target to generate assembly for a file
-challenge_problems/Easy/recipie.cpp.s:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/challenge_problems/Easy/recipie.cpp.s
-.PHONY : challenge_problems/Easy/recipie.cpp.s
-
-venv/lib/python2.7/config/config.o: venv/lib/python2.7/config/config.c.o
-
-.PHONY : venv/lib/python2.7/config/config.o
-
-# target to build an object file
-venv/lib/python2.7/config/config.c.o:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/venv/lib/python2.7/config/config.c.o
-.PHONY : venv/lib/python2.7/config/config.c.o
-
-venv/lib/python2.7/config/config.i: venv/lib/python2.7/config/config.c.i
-
-.PHONY : venv/lib/python2.7/config/config.i
-
-# target to preprocess a source file
-venv/lib/python2.7/config/config.c.i:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/venv/lib/python2.7/config/config.c.i
-.PHONY : venv/lib/python2.7/config/config.c.i
-
-venv/lib/python2.7/config/config.s: venv/lib/python2.7/config/config.c.s
-
-.PHONY : venv/lib/python2.7/config/config.s
+.PHONY : Algorithms/DP/test.s
 
 # target to generate assembly for a file
-venv/lib/python2.7/config/config.c.s:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/venv/lib/python2.7/config/config.c.s
-.PHONY : venv/lib/python2.7/config/config.c.s
+Algorithms/DP/test.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Algorithms/DP/test.cpp.s
+.PHONY : Algorithms/DP/test.cpp.s
 
 # Help Target
 help:
@@ -374,34 +318,26 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... DSALGO"
-	@echo "... Algorithms/DP/LIS/LIS.o"
-	@echo "... Algorithms/DP/LIS/LIS.i"
-	@echo "... Algorithms/DP/LIS/LIS.s"
-	@echo "... Algorithms/DP/coindp/coindp.o"
-	@echo "... Algorithms/DP/coindp/coindp.i"
-	@echo "... Algorithms/DP/coindp/coindp.s"
-	@echo "... Algorithms/DP/factorial/fact.o"
-	@echo "... Algorithms/DP/factorial/fact.i"
-	@echo "... Algorithms/DP/factorial/fact.s"
-	@echo "... Algorithms/DP/grid/grid.o"
-	@echo "... Algorithms/DP/grid/grid.i"
-	@echo "... Algorithms/DP/grid/grid.s"
-	@echo "... Algorithms/Math/quick_exponentiation.o"
-	@echo "... Algorithms/Math/quick_exponentiation.i"
-	@echo "... Algorithms/Math/quick_exponentiation.s"
-	@echo "... Algorithms/RangeQueries/Fenwick/implement.o"
-	@echo "... Algorithms/RangeQueries/Fenwick/implement.i"
-	@echo "... Algorithms/RangeQueries/Fenwick/implement.s"
-	@echo "... Algorithms/Strings/substring_bf.o"
-	@echo "... Algorithms/Strings/substring_bf.i"
-	@echo "... Algorithms/Strings/substring_bf.s"
-	@echo "... challenge_problems/Easy/recipie.o"
-	@echo "... challenge_problems/Easy/recipie.i"
-	@echo "... challenge_problems/Easy/recipie.s"
-	@echo "... venv/lib/python2.7/config/config.o"
-	@echo "... venv/lib/python2.7/config/config.i"
-	@echo "... venv/lib/python2.7/config/config.s"
+	@echo "... S4"
+	@echo "... test"
+	@echo "... dup_knapsack"
+	@echo "... lis"
+	@echo "... 0-1_knapsack"
+	@echo "... Algorithms/DP/0-1_knapsack.o"
+	@echo "... Algorithms/DP/0-1_knapsack.i"
+	@echo "... Algorithms/DP/0-1_knapsack.s"
+	@echo "... Algorithms/DP/S4.o"
+	@echo "... Algorithms/DP/S4.i"
+	@echo "... Algorithms/DP/S4.s"
+	@echo "... Algorithms/DP/dup_knapsack.o"
+	@echo "... Algorithms/DP/dup_knapsack.i"
+	@echo "... Algorithms/DP/dup_knapsack.s"
+	@echo "... Algorithms/DP/lis.o"
+	@echo "... Algorithms/DP/lis.i"
+	@echo "... Algorithms/DP/lis.s"
+	@echo "... Algorithms/DP/test.o"
+	@echo "... Algorithms/DP/test.i"
+	@echo "... Algorithms/DP/test.s"
 .PHONY : help
 
 

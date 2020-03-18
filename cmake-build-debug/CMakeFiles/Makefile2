@@ -44,21 +44,29 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alpha/dev/DSALGO
+CMAKE_SOURCE_DIR = /Users/alpha/Desktop/DsAlgoC++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alpha/dev/DSALGO/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/DSALGO.dir/all
+all: CMakeFiles/S4.dir/all
+all: CMakeFiles/test.dir/all
+all: CMakeFiles/dup_knapsack.dir/all
+all: CMakeFiles/lis.dir/all
+all: CMakeFiles/0-1_knapsack.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/DSALGO.dir/clean
+clean: CMakeFiles/S4.dir/clean
+clean: CMakeFiles/test.dir/clean
+clean: CMakeFiles/dup_knapsack.dir/clean
+clean: CMakeFiles/lis.dir/clean
+clean: CMakeFiles/0-1_knapsack.dir/clean
 
 .PHONY : clean
 
@@ -68,31 +76,139 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/DSALGO.dir
+# Target rules for target CMakeFiles/S4.dir
 
 # All Build rule for target.
-CMakeFiles/DSALGO.dir/all:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/depend
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alpha/dev/DSALGO/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target DSALGO"
-.PHONY : CMakeFiles/DSALGO.dir/all
+CMakeFiles/S4.dir/all:
+	$(MAKE) -f CMakeFiles/S4.dir/build.make CMakeFiles/S4.dir/depend
+	$(MAKE) -f CMakeFiles/S4.dir/build.make CMakeFiles/S4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target S4"
+.PHONY : CMakeFiles/S4.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DSALGO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/dev/DSALGO/cmake-build-debug/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DSALGO.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/dev/DSALGO/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/DSALGO.dir/rule
+CMakeFiles/S4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/S4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/S4.dir/rule
 
 # Convenience name for target.
-DSALGO: CMakeFiles/DSALGO.dir/rule
+S4: CMakeFiles/S4.dir/rule
 
-.PHONY : DSALGO
+.PHONY : S4
 
 # clean rule for target.
-CMakeFiles/DSALGO.dir/clean:
-	$(MAKE) -f CMakeFiles/DSALGO.dir/build.make CMakeFiles/DSALGO.dir/clean
-.PHONY : CMakeFiles/DSALGO.dir/clean
+CMakeFiles/S4.dir/clean:
+	$(MAKE) -f CMakeFiles/S4.dir/build.make CMakeFiles/S4.dir/clean
+.PHONY : CMakeFiles/S4.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test.dir
+
+# All Build rule for target.
+CMakeFiles/test.dir/all:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target test"
+.PHONY : CMakeFiles/test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/test.dir/rule
+
+# Convenience name for target.
+test: CMakeFiles/test.dir/rule
+
+.PHONY : test
+
+# clean rule for target.
+CMakeFiles/test.dir/clean:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
+.PHONY : CMakeFiles/test.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/dup_knapsack.dir
+
+# All Build rule for target.
+CMakeFiles/dup_knapsack.dir/all:
+	$(MAKE) -f CMakeFiles/dup_knapsack.dir/build.make CMakeFiles/dup_knapsack.dir/depend
+	$(MAKE) -f CMakeFiles/dup_knapsack.dir/build.make CMakeFiles/dup_knapsack.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target dup_knapsack"
+.PHONY : CMakeFiles/dup_knapsack.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dup_knapsack.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dup_knapsack.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/dup_knapsack.dir/rule
+
+# Convenience name for target.
+dup_knapsack: CMakeFiles/dup_knapsack.dir/rule
+
+.PHONY : dup_knapsack
+
+# clean rule for target.
+CMakeFiles/dup_knapsack.dir/clean:
+	$(MAKE) -f CMakeFiles/dup_knapsack.dir/build.make CMakeFiles/dup_knapsack.dir/clean
+.PHONY : CMakeFiles/dup_knapsack.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lis.dir
+
+# All Build rule for target.
+CMakeFiles/lis.dir/all:
+	$(MAKE) -f CMakeFiles/lis.dir/build.make CMakeFiles/lis.dir/depend
+	$(MAKE) -f CMakeFiles/lis.dir/build.make CMakeFiles/lis.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target lis"
+.PHONY : CMakeFiles/lis.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lis.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lis.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/lis.dir/rule
+
+# Convenience name for target.
+lis: CMakeFiles/lis.dir/rule
+
+.PHONY : lis
+
+# clean rule for target.
+CMakeFiles/lis.dir/clean:
+	$(MAKE) -f CMakeFiles/lis.dir/build.make CMakeFiles/lis.dir/clean
+.PHONY : CMakeFiles/lis.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/0-1_knapsack.dir
+
+# All Build rule for target.
+CMakeFiles/0-1_knapsack.dir/all:
+	$(MAKE) -f CMakeFiles/0-1_knapsack.dir/build.make CMakeFiles/0-1_knapsack.dir/depend
+	$(MAKE) -f CMakeFiles/0-1_knapsack.dir/build.make CMakeFiles/0-1_knapsack.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target 0-1_knapsack"
+.PHONY : CMakeFiles/0-1_knapsack.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/0-1_knapsack.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/0-1_knapsack.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alpha/Desktop/DsAlgoC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/0-1_knapsack.dir/rule
+
+# Convenience name for target.
+0-1_knapsack: CMakeFiles/0-1_knapsack.dir/rule
+
+.PHONY : 0-1_knapsack
+
+# clean rule for target.
+CMakeFiles/0-1_knapsack.dir/clean:
+	$(MAKE) -f CMakeFiles/0-1_knapsack.dir/build.make CMakeFiles/0-1_knapsack.dir/clean
+.PHONY : CMakeFiles/0-1_knapsack.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

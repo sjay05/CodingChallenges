@@ -52,5 +52,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/DSALGO.dir/DependInfo.cmake"
+  "CMakeFiles/S4.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
+  "CMakeFiles/dup_knapsack.dir/DependInfo.cmake"
+  "CMakeFiles/lis.dir/DependInfo.cmake"
+  "CMakeFiles/0-1_knapsack.dir/DependInfo.cmake"
   )
