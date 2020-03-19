@@ -7,7 +7,7 @@ using namespace std;
 Below is an non-recursive implementation of "single element 
 modification" segment tree. The code can be modified to do range 
 [min, max, and sum]. Bitmask can be used at certain locations 
-to speed up operations. For example to multiple a number (x) 
+to speed up operations. For example to multiply a number (x) 
 by 2, we can do (x << 1) as it represents x * (2^1) = x * 2.
 Also, (x /= 2) can be rewritten as (x >>= 1). Finally, to check 
 if x is odd, instead of doing (x % 2 == 1) we can do (x & 1).
