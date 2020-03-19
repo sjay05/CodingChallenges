@@ -42,9 +42,10 @@ Update() {
 Sum() {
     - Sum is one of the more difficult operations. We follow
     the concept that as soon as a node becomes a right-child,
-    it is useless to go the parent, so we min() it with a global
-    variable. A node can be checked if it is a right child, as
-    all right child idx's are odd. 
+    it is useless to go the parent since we don't care about 
+    left-child, so we min() it with a global variable. A node 
+    can be checked if it is a right child, as all right child 
+    idx's are odd. 
 }
 */
 
@@ -76,12 +77,10 @@ int min(int l, int r) {
     l += n; r += n;
     while (l < r) {
         if (l % 2 == 1) {
-            ret = _min(ret, seg[l]);
-            l++;
+            ret = _min(ret, seg[l]); l++;
         } 
         if (r % 2 == 1) {
-            r--;
-            ret = _min(ret, seg[r]);
+            r--; ret = _min(ret, seg[r]);
         }
         l /= 2; r /= 2;
     }
