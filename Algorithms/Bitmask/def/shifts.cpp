@@ -17,5 +17,5 @@ Formula:
  */
 
 int main() {
-    printf("%d\n", 1<<6);
+    printf("%d\n", 1 << 6);
 }

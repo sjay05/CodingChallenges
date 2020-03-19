@@ -20,7 +20,7 @@ void update(int k, int v) {
 
 int sum(int n) {
     /*
-    Query sum for [1] to [..n];
+    Query sum for [1] to [n];
     */
     int su = 0;
     for (int i = n; i > 0; i -= i&-i) {
@@ -35,7 +35,6 @@ int main() {
     }
 
     // Ex. Query for Sum from [3] to [5]
-    int i = 0;
-    int j = 5;
+    int i = 0; int j = 5;
     printf("%i\n", sum(j) - sum(i - 1));
 }
