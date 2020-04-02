@@ -50,13 +50,14 @@ Sum() {
 */
 
 #define _min(a, b) a < b ? a : b
+#define all(x) x.begin(), x.end()
 
 int n = 8;
 vector<int> arr = {1, 5, 3, 7, 3, 6, 5, 7};
 vector<int> seg(2*n);
 
 void build() {
-    copy(arr.begin(), arr.end(), &seg[0]+n);
+    copy(all(arr), &seg[0]+n);
     for (int idx = n-1; idx > 0; idx--) {
         seg[idx] = min(seg[idx*2], seg[idx*2+1]);
     }
@@ -77,10 +78,12 @@ int min(int l, int r) {
     l += n; r += n;
     while (l < r) {
         if (l % 2 == 1) {
-            ret = _min(ret, seg[l]); l++;
+            ret = _min(ret, seg[l]); 
+            l++;
         } 
         if (r % 2 == 1) {
-            r--; ret = _min(ret, seg[r]);
+            r--; 
+            ret = _min(ret, seg[r]);
         }
         l /= 2; r /= 2;
     }

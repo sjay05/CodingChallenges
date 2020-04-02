@@ -31,47 +31,38 @@ set<int> nodes;
 vector<bool> visited(MAXN, false);
 vector<int> ans;
 
-void dfs(int v)
-{
-    visited[v] = true;
-    for (int u : adj[v])
-    {
-        if (!visited[u])
-        {
-            dfs(u);
-        }
+void dfs(int v) {
+  visited[v] = true;
+  for (int u : adj[v]) {
+    if (!visited[u]) {
+      dfs(u);
     }
-    ans.push_back(v);
+  }
+  ans.push_back(v);
 }
 
-void topological_sort()
-{
-    for (int i : nodes)
-    {
-        if (!visited[i])
-        {
-            dfs(i);
-        }
+void topological_sort() {
+  for (int i : nodes) {
+    if (!visited[i]) {
+      dfs(i);
     }
-    reverse(ans.begin(), ans.end());
+  }
+  reverse(ans.begin(), ans.end());
 }
 
-int main()
-{
-    int E, A, B;
-    scanf("%i", &E);
-    while (E--)
-    {
-        scanf("%i %i", &A, &B);
-        adj[A].push_back(B);
-        nodes.insert(A);
-        nodes.insert(B);
-    }
-    topological_sort();
-    printf("Topological Sequence: ");
-    for (int i : ans)
-    {
-        printf("%i ", i);
-    }
-    printf("\n");
+int main() {
+  int E, A, B;
+  scanf("%i", &E);
+  while (E--) {
+    scanf("%i %i", &A, &B);
+    adj[A].push_back(B);
+    nodes.insert(A);
+    nodes.insert(B);
+  }
+  topological_sort();
+  printf("Topological Sequence: ");
+  for (int i : ans) {
+    printf("%i ", i);
+  }
+  printf("\n");
 }
