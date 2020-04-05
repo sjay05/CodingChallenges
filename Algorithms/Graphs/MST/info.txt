@@ -14,3 +14,15 @@ minimum spanning trees:
 
     1) Kruskal's Algorithm
     2) Prim's Algorithm 
+
+Which MST algorithm to choose?
+ - There are certain circumstances in problems which will
+ help you decide which MST algorithm to use.
+
+ Kruskal's Algorithm: peforms better in typical situations
+ (sparse graphs) b/c it uses simpler data structures.
+
+ Prim's Algorithm: is significantly faster in the time limit
+ when you got a really dense graph with more "edges" than 
+ verticies.
+

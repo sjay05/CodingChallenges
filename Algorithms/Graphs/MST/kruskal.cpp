@@ -26,9 +26,34 @@ the two edges, we must carry out a O(N) operation.
 */
 
 /*
-To speed things up we can use a Disjoint Set Union
-to answer find and execute union in O(log n), making
-things faster.
+To speed things up we can use the disjoint
+set data structure with O(log n) find and
+union. Here is the commented code for it:
+
+
+*int id[100];
+
+*int root(int i) {
+*    while (i != id[i]) {
+*        id[i] = id[id[i]];
+*        i = id[i];
+*    }
+*    return i;
+*}
+*
+*bool find(int p, int q) {
+*    return root(p) == root(q);
+*}
+*
+*void unite(int p, int q) {
+*    int i = root(p);
+*    int j = root(q);
+*    id[i] = j;
+*}
+
+In problems, we tend to prefer Kruskal's implementation
+with disjoint-set data structure to avoid TLE at all
+costs. 
 */
 
 #define adj_list vector<vector<int>> 
@@ -80,9 +105,10 @@ adj_list gen_MST() {
 }
 
 int main() {
-    int E, U, V, W; cin >> E;
+    int E, U, V, W; 
+    scanf("%i", &E);
     while (E--) {
-        cin >> U >> V >> W;
+        scanf("%i%i%i", &U, &V, &W);
         edges.push_back({U, V, W});
         // add nodes to set<int> vert
         vert.insert(U); vert.insert(V);
@@ -91,11 +117,11 @@ int main() {
     vector<vector<int>> adj = gen_MST();
     // interactive loop to view tree
     for (int i : vert) {
-        cout << i << "'s neighbors = ";
+        printf("%i's neighbors = ", i);
         for (int x : adj[i]) {
-            cout << x << " ";
+            printf("%i ", x);
         }
-        cout << endl;
+        printf("\n");
     }
 }
 
