@@ -66,41 +66,27 @@ bool cmp(Edge &x, Edge &y) {
     return x.weight < y.weight;
 }
 
-// total number of nodes
 int MAXN = 100;
-// set of verticies
 set<int> vert;
-// edge list
 vector<Edge> edges;
 
 adj_list gen_MST() {
-    // returns adj_list
     vector<vector<int>> adj(MAXN);
-    // id array for connected components
     vector<int> id(MAXN);
-    // set all vertex to their own component
     for (int i : vert) 
         id[i] = i;
-    // sort edges by weight
     sort(edges.begin(), edges.end(), cmp);
-    // traverse edges by sort
     for (Edge &e : edges) {
-        /* if both nodes belong to diff component
-           then create a connection, and union both
-           edges in O(N). */ 
         if (id[e.u] != id[e.v]) {
-            // make bi-directional edge
             adj[e.u].push_back(e.v);
             adj[e.v].push_back(e.u);
 
-            // O(N) union of two nodes
             int pid = id[e.u], qid = id[e.v];
             for (int i : vert) 
                 if (id[i] == pid) 
                     id[i] = qid;
         }
     }
-    // return adj_list
     return adj;
 }
 
@@ -110,12 +96,9 @@ int main() {
     while (E--) {
         scanf("%i%i%i", &U, &V, &W);
         edges.push_back({U, V, W});
-        // add nodes to set<int> vert
         vert.insert(U); vert.insert(V);
     }
-    // get adj_list from get_MST();
     vector<vector<int>> adj = gen_MST();
-    // interactive loop to view tree
     for (int i : vert) {
         printf("%i's neighbors = ", i);
         for (int x : adj[i]) {

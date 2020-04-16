@@ -27,20 +27,16 @@ const int MAXN = 100;
 vector<vector<int>> adj(MAXN);
 
 // Normal bfs trav to find if src connected to dest
-bool bfs(int src, int dest)
-{
+bool bfs(int src, int dest) {
     vector<bool> visited(MAXN);
     queue<int> buf;
     visited[src] = true;
     buf.push(src);
-    while (!buf.empty())
-    {
+    while (!buf.empty()) {
         int u = buf.front();
         buf.pop();
-        for (auto &x : adj[u])
-        {
-            if (!visited[x])
-            {
+        for (auto &x : adj[u]) {
+            if (!visited[x]) {
                 buf.push(x);
                 visited[x] = true;
             }
@@ -50,20 +46,16 @@ bool bfs(int src, int dest)
 }
 
 // One way to find shortest path using INT_MAX in dist vector.
-int bfs2(int src, int dest)
-{
+int bfs2(int src, int dest) {
     vector<int> dist(MAXN, INT_MAX);
     queue<int> buf;
     buf.push(src);
     dist[src] = 0;
-    while (!buf.empty())
-    {
+    while (!buf.empty()) {
         int u = buf.front();
         buf.pop();
-        for (auto &x : adj[u])
-        {
-            if (dist[u] + 1 < dist[x])
-            {
+        for (auto &x : adj[u]) {
+            if (dist[u] + 1 < dist[x]) {
                 dist[x] = dist[u] + 1;
                 buf.push(x);
             }
@@ -73,19 +65,15 @@ int bfs2(int src, int dest)
 }
 
 // Another way to find shortest path keeping dist vector at 0
-int bfs3(int src, int dest)
-{
+int bfs3(int src, int dest) {
     vector<int> dist(MAXN, 0);
     queue<int> buf;
     buf.push(src);
-    while (!buf.empty())
-    {
+    while (!buf.empty()) {
         int u = buf.front();
         buf.pop();
-        for (auto &v : adj[u])
-        {
-            if (!dist[v])
-            {
+        for (auto &v : adj[u]) {
+            if (!dist[v]) {
                 dist[v] = dist[u] + 1;
                 buf.push(v);
             }
@@ -94,12 +82,10 @@ int bfs3(int src, int dest)
     return dist[dest];
 }
 
-int main()
-{
+int main() {
     int E, A, B;
     scanf("%i", &E);
-    while (E--)
-    {
+    while (E--) {
         scanf("%i %i", &A, &B);
         adj[A].push_back(B);
         adj[B].push_back(A);

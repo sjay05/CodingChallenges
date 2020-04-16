@@ -52,19 +52,13 @@ string Y = "BDCABA";
 int N = X.size();
 int M = Y.size();
 
-int lcs()
-{
+int lcs() {
     int dp[M + 1][N + 1];
-    for (int i = 1; i <= M; i++)
-    {
-        for (int j = 1; j <= N; j++)
-        {
-            if (X[j] == Y[i])
-            {
+    for (int i = 1; i <= M; i++) {
+        for (int j = 1; j <= N; j++) {
+            if (X[j] == Y[i]) {
                 dp[i][j] = dp[i - 1][j - 1] + 1;
-            }
-            else
-            {
+            } else {
                 dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
             }
         }
@@ -72,11 +66,9 @@ int lcs()
     return dp[M][N];
 }
 
-int main()
-{
+int main() {
     vector<int> v = {1, 2, 3, 4};
-    for (int i : v)
-    {
+    for (int i : v) {
         printf("%i\n", i);
     }
 }

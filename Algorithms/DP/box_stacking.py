@@ -69,7 +69,8 @@ def box_stack(boxes, n):
                     dp[i] = dp[j] + perms[i].h
     
     maxn = -1
-    for i in range(n): maxn = max(maxn, dp[i])
+    for i in range(n): 
+        maxn = max(maxn, dp[i])
 
     return maxn
 
