@@ -39,7 +39,7 @@ class Box:
     # for sorting purposes
     def __lt__(self, other):
         return self.d * self.w < other.d * other.w 
-
+    
 def box_stack(boxes, n):
     # @param n = len(boxes)
     perms = []

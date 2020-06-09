@@ -64,9 +64,10 @@ int main() {
     unite(1, 4); unite(4, 7);
     unite(2, 3); unite(3, 6);
     unite(3, 8);
-    if (find(2, 8)) {
-        printf("Connected\n");
-    } else {
-        printf("Not Connected\n");
-    }
+    cout << root(3) << "\n";
+    // if (find(2, 8)) {
+    //     printf("Connected\n");
+    // } else {
+    //     printf("Not Connected\n");
+    // }
 }

@@ -18,3 +18,5 @@ x ^ y produces a number that has one Bitmask in positions
 int main() {
     printf("%d\n", 22^26);
 }
+
+

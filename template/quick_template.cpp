@@ -15,11 +15,13 @@ typedef vector<vi> vvi;
 typedef pair<int,int> pii;
 
 void scan(){}template<class T, class...A> void scan(T&t, A&...a) { cin >> t, scan(a...); }
-void print(){}template<class T, class...A> void print(T t, A...a) { cout << t, print(a...); }
+void print(){}template<class T> void print(T t) {cout << t << endl;}
 
 int main() {
-	ios::sync_with_stdio(false);
-	cin.tie(0);
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	int a, b, c;
+	scan(a, b, c);
+	print(a+b+c);
 }
-
-
