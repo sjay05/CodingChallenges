@@ -2,4 +2,3 @@
 *.out
 __pycache__/
 env/
-README.md
