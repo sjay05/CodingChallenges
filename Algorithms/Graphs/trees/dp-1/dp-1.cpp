@@ -1,5 +1,4 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -38,6 +37,9 @@ int main() {
     }
     dfs(1, -1);
     printf("%i\n",dp[1]);
+	for (int i = 0; i < 10; i++) {
+		int x; cin >> x;
+	}
 }
 
 /*

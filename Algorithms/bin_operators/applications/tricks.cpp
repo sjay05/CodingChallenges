@@ -100,7 +100,13 @@ int main() {
         x &= (x - 1);
         number_of_bits++;
     }
-    
-
-
+    /*
+    Check if the i'th bit is Set (1 | 0):
+    Given (n) and (pos) to check if i'th 
+    bit is 1 do n & ( 1 << pos ).
+    */   
+    int num = 5, pos = 1;
+    if (num & (1 << pos)) {
+        
+    }
 }
