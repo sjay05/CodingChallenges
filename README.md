@@ -35,6 +35,8 @@ specifically below. Algorithms will be frequently updated and new ones will be a
 * [Policy Based DS](https://github.com/sjay05/data_structures_and_algorithms/blob/master/Data_Structures/policy_ds/ord_set.cpp)
 * [Prefix Sum Array](https://github.com/sjay05/data_structures_and_algorithms/blob/master/Data_Structures/psa.cpp)
 * [Segment Tree](https://github.com/sjay05/data_structures_and_algorithms/blob/master/Data_Structures/segment_tree/seg.cpp)
+* Segment ([Range Sum Query](https://github.com/sjay05/data_structures_and_algorithms/blob/master/Data_Structures/segmentree/regular_seg.cpp), [RMQ](https://github.com/sjay05/data_structures_and_algorithms/blob/master/Data_Structures/segmentree/seg_rmq.cpp))
+* [Iterative Segment Tree](https://github.com/sjay05/data_structures_and_algorithms/blob/master/Data_Structures/segmentree/iterative_seg.cpp)
 
 ## Other
 * [Sieve of Eratosthenes](https://github.com/sjay05/data_structures_and_algorithms/blob/master/Algorithms/Math/Algebra/sieve.cpp)
