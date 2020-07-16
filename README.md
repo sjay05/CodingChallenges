@@ -45,3 +45,4 @@ specifically below. Algorithms will be frequently updated and new ones will be a
 * [Bitwise Operators](https://github.com/sjay05/data_structures_and_algorithms/tree/master/Algorithms/bin_operators/def)
 * [Binary Search](https://github.com/sjay05/data_structures_and_algorithms/blob/master/Algorithms/Sorting_searching/binary_search.cpp)
 * [Counting BST's](https://github.com/sjay05/data_structures_and_algorithms/blob/master/Algorithms/Recursion/count_BST.cpp)
+* [Segment Tree Problems](https://github.com/sjay05/data_structures_and_algorithms/tree/master/Data_Structures/seg_tree_probs)
