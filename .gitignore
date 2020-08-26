@@ -2,7 +2,5 @@
 *.out
 __pycache__/
 env/
-Algorithms/Math/gen
-Algorithms/Math/ModArith.cpp
-Algorithms/Math/random.h
-Algorithms/Math/test.cpp
+zalgo-archive/
+DS-Archive/
