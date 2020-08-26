@@ -1,4 +1,3 @@
-# Data Structures and Algorithms (Implementation)
+# CP - Notes (Resources):
 
-This repo consists of a variety of data structures and algorithms listed
-specifically below. Algorithms will be frequently updated and new ones will be added.
+This repo contains implementations of various algorithms intended for competitive programming or known as CP. Links will be added to the README soon for quicker reference.

@@ -1,7 +1,3 @@
-/**
- * author: sanjay
- * date:   04-Aug-20 2:39:12 pm
- */
 #include <bits/stdc++.h>
 
 using namespace std;
